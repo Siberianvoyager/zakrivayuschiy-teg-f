@@ -1,1 +1,1 @@
-[My project] (https://github.com/Siberianvoyager/zakrivayuschiy-teg-f.git)
+[My project](https://github.com/Siberianvoyager/zakrivayuschiy-teg-f.git)
