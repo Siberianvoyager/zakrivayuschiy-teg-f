@@ -1,1 +1,36 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --container-size: min(100%, 700px);
+    --bg-color: #000;
+    --bg-gradient: #000;
+    --bg-accent-gradient-from: #007f0c;
+    --bg-accent-gradient-to: #004306;
+    --accent-color: #00CC14;
+    --button-text-color: #00CC14;
+    --heart-contour-color: #00CC14;
+    --heart-liked-color: red;
+    --label-contour-color: #000;
+  
+    --gradient-point: 0%;
+    --gradient: repeating-linear-gradient(to left, var(--bg-gradient) 0 2px, transparent 2px 4px),
+                repeating-linear-gradient(to bottom, var(--bg-gradient) 0 2px, transparent 2px 4px),
+                linear-gradient(var(--bg-accent-gradient-from) var(--gradient-point), var(--bg-accent-gradient-to));
+  
+    --gredient-to-bottom: none;
+  
+    --main-font: Inter;
+    --accent-font: PressStart2P;
+    --font-size: 18px;
+    --normal-wgth: 465;
+    --bold-wgth: 785;
+    --wdth: 100;
+    --font-header-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  
+    --standart-animation: .3s ease;
+  }
+  
+  @media (width < 375px) {
+    :root {
+      --font-header-size: 2.8rem;
+    }
+  }

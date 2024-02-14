@@ -4,3 +4,82 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+.page.theme-dark {
+    --bg-color: #000;
+    --bg-gradient: #000;
+    --bg-accent-gradient: #00CC14;
+    --bg-accent-gradient-from: #007f0c;
+    --bg-accent-gradient-to: #004306;
+    --accent-color: #00CC14;
+    --button-text-color: #00CC14;
+    --heart-contour-color: #00CC14;
+    --label-contour-color: #000;
+  
+    --point: 0%;
+    --gradient: repeating-linear-gradient(to left, var(--bg-gradient) 0 2px, transparent 2px 4px),
+                repeating-linear-gradient(to bottom, var(--bg-gradient) 0 2px, transparent 2px 4px),
+                linear-gradient(var(--bg-accent-gradient-from) var(--point), var(--bg-accent-gradient-to));
+    --gredient-to-bottom: none;
+    /* Шрифты */
+    --normal-wgth: 465;
+    --bold-wgth: 785;
+  }
+  
+  .page.theme-light {
+    --bg-color: #fff;
+    --bg-gradient: #d3d3d3;
+    --bg-accent-gradient-from: #e7e7e7;
+    --bg-accent-gradient-to: #1a1a1a;
+    --accent-color: #000;
+    --button-text-color: #fff;
+    --heart-contour-color: #000;
+    --label-contour-color: #fff;
+  
+    --gradient-point: .01%;
+    --gradient: repeating-linear-gradient(to left, var(--bg-gradient) 0 2px, transparent 2px 4px),
+                repeating-linear-gradient(to bottom, var(--bg-gradient) 0 2px, transparent 2px 4px),
+                linear-gradient(var(--bg-accent-gradient-from) var(--gradient-point), var(--bg-accent-gradient-to));
+    --gredient-to-bottom: linear-gradient(
+                          to bottom,
+                        rgb(0 0 0 / 1),
+                        rgb(0 0 0 / 0.9) 10%,
+                        rgb(0 0 0 / 0) 40%,
+                        rgb(0 0 0 / 0) 100%
+                        );
+    /* Шрифты */
+    --normal-wgth: 400;
+    --bold-wgth: 700;
+    /* Изображения */
+  }
+  
+  /* Дублируем переменные светлой темы */
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg-color: #fff;
+      --bg-gradient: #d3d3d3;
+      --bg-accent-gradient-from: #e7e7e7;
+      --bg-accent-gradient-to: #1a1a1a;
+      --accent-color: #000;
+      --button-text-color: #fff;
+      --heart-contour-color: #000;
+      --label-contour-color: #fff;
+  
+      --gradient-point: .01%;
+      --gradient: repeating-linear-gradient(to left, var(--bg-gradient) 0 2px, transparent 2px 4px),
+                repeating-linear-gradient(to bottom, var(--bg-gradient) 0 2px, transparent 2px 4px),
+                linear-gradient(var(--bg-accent-gradient-from) var(--gradient-point), var(--bg-accent-gradient-to));
+      --gredient-to-bottom: linear-gradient(
+                            to bottom,
+                          rgb(0 0 0 / 1),
+                          rgb(0 0 0 / 0.9) 10%,
+                          rgb(0 0 0 / 0) 40%,
+                          rgb(0 0 0 / 0) 100%
+                          );
+      /* Шрифты */
+      --normal-wgth: 400;
+      --bold-wgth: 700;
+      /* Изображения */
+      --bg-image: url(../svg/cover-light.svg);
+    }
+  }
