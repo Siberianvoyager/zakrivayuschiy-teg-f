@@ -47,12 +47,11 @@
                         rgb(0 0 0 / 0) 40%,
                         rgb(0 0 0 / 0) 100%
                         );
-    /* Шрифты */
+ 
     --normal-wgth: 400;
     --bold-wgth: 700;
   }
   
-  /* Дублируем переменные светлой темы */
   @media (prefers-color-scheme: light) {
     :root {
       --bg-color: #fff;
@@ -75,7 +74,7 @@
                           rgb(0 0 0 / 0) 40%,
                           rgb(0 0 0 / 0) 100%
                           );
-      /* Шрифты */
+    
       --normal-wgth: 400;
       --bold-wgth: 700;
     }

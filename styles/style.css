@@ -77,9 +77,7 @@
   font-size: 14px;
 }
 
-
 .theme-menu__button {
-  
   position: relative;
   justify-self: start;
   border: none;
@@ -151,7 +149,6 @@
   font-size: 18px;
 }
 
-/* не работает*/
 .linear-gradient_to-bottom::after {
   content: '';
   position: absolute;
@@ -161,7 +158,6 @@
   inline-size: 100%;
   block-size: 100%;
 }
-
 
 .filter-blur {
   filter: blur(2px);
@@ -211,10 +207,6 @@
   inline-size: 100%;
   aspect-ratio: 1 / 1;
 }
-/* зачем?
-.rotate90 {
-  transform: rotate(90deg);
-} */
 
 .card__img-label {
   position: absolute;
@@ -232,15 +224,7 @@
   inset-block-start: clamp(1.375rem, 1.309rem + 0.2817vw, 1.5625rem);
   mix-blend-mode: hard-light;
 }
-/* зачем?*/
-.emoji_heart {
-  vertical-align: middle;
-  animation: beating-heart 1.5s infinite  ease-in-out;
-  will-change: auto;
-  block-size: 21px;
-  inline-size: 21px;
-}
-/* зачем?*/
+
 @supports((text-stroke: 1px var(--label-contour-color)) or (-webkit-text-stroke: 1px var(--label-contour-color))) {
   .card__img-label {
       text-shadow: none;
@@ -304,7 +288,6 @@
   border: 2px solid currentColor;
   overflow: hidden;
   transition: box-shadow var(--standart-animation);
-
   min-block-size: 38px;
 }
 
@@ -320,7 +303,7 @@
   inline-size: 100%;
   block-size: 100%;
 }
-/* затемняет все кнопки */
+
 .animate-button:hover::after {
   transform: translateX(0);
 } 
@@ -350,17 +333,13 @@
   line-height: .9;
   mix-blend-mode: difference;
 }
-/* уменьшает сохр на память*/
+
 .button__icon {
   color: var(--button-text-color);
   inline-size: 2em;
   block-size: 2em;
   mix-blend-mode: difference;
   stroke: var(--button-text-color);
-}
-/*???*/
-dialog:-internal-dialog-in-top-layer {
-  max-width: 92%;
 }
 
 .dialog {
@@ -396,7 +375,6 @@ grid-column-gap: 20px;
 }
 
 .dialog:not([open]) {
-  /* opacity: 0; */
   display: none;
   pointer-events: none;
 }
