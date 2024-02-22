@@ -13,9 +13,6 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-::-webkit-scrollbar {
-  width: 28px; 
-}
 
 .page {
   color: var(--accent-color);
@@ -264,11 +261,8 @@
 .card__text-block {
   display: flex;
   flex-direction: column;
-  flex-direction: column;
   gap: 27px;
 }
-
-
 
 .card__buttons {
   display: flex;
