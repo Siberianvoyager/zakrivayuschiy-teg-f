@@ -13,6 +13,9 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
+::-webkit-scrollbar {
+  width: 28px; 
+}
 
 .page {
   color: var(--accent-color);
@@ -27,20 +30,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }
-/*
-.grid {
-  display: grid;
-} 
 
-.flex {
-  display: flex;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-*/
 .container {
   margin: 0 auto 50px ;
   inline-size: var(--container-size, min(100%, 700px));
@@ -210,7 +200,7 @@
 
 .card__img-group {
   position: relative;
-  border-block-end: 2px solid currentColor;
+  border-block-end: 1px solid currentColor;
   overflow: hidden;
   font-size: 0;
   background-color: gray;
@@ -291,11 +281,6 @@
   padding: 0;
   transition: border-color var(--standart-animation, .3s ease);
   block-size: 38px;
-}
-
-.like-icon {
-  inline-size: 39px;
-  block-size: 36px;
 }
 
 .card__icon-button:focus-visible {
