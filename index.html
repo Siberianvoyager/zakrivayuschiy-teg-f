@@ -444,6 +444,16 @@
         </article>
 
     </section>
+    <button class="button card__save-button animate-button" type="button"
+    onclick="window['dialog-id'].showModal();" aria-controls="dialog-id">
+  
+    <svg class="button__icon button__element" viewBox="0 0 39 39">
+      <use href="#floppy"/>
+    </svg>
+    <span class="button__text button__element">
+      Сохранить на память
+    </span>
+    </button>
     </main>
 
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor">
@@ -452,18 +462,6 @@
       </symbol>
     </svg>
 
-  <footer class="footer">
-  <button class="button card__save-button animate-button" type="button"
-  onclick="window['dialog-id'].showModal();" aria-controls="dialog-id">
-
-  <svg class="button__icon button__element" viewBox="0 0 39 39">
-    <use href="#floppy"/>
-  </svg>
-  <span class="button__text button__element">
-    Сохранить на память
-  </span>
-  </button>
-  </footer>
     <dialog id="dialog-id" class="dialog" >
       <div class="wrapper">
       <svg class="dialog__icon" aria-hidden="true" >
