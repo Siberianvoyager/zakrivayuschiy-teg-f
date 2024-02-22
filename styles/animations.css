@@ -110,6 +110,10 @@
     animation: scaling-heart .3s .1s alternate ease-in;
   }
 
+  .like-icon.is-liked .heart:hover {
+    transform-origin: scale(1.2);
+  }
+
   .like-icon.is-liked .sparks {
     animation: sparks-visualisation .3s .3s alternate ease-in;
   }

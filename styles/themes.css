@@ -65,7 +65,7 @@
       --heart-contour-color: #000;
       --label-contour-color: #fff;
   
-      --gradient-point: .01%;
+      --gradient-point: 0%;
       --gradient: repeating-linear-gradient(to left, var(--bg-gradient) 0 2px, transparent 2px 4px),
                 repeating-linear-gradient(to bottom, var(--bg-gradient) 0 2px, transparent 2px 4px),
                 linear-gradient(var(--bg-accent-gradient-from) var(--gradient-point), var(--bg-accent-gradient-to));

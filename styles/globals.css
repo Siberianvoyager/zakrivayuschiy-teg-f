@@ -3,9 +3,13 @@
 Вы можете изменять этот файл или дополнять. Но скорее всего, вам это не потребуется. */
 
 *,
-*::after,
-*::before {
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+html {
+  block-size: 100%;
 }
 
 body {

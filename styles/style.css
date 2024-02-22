@@ -27,10 +27,10 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }
-
-/*.grid {
+/*
+.grid {
   display: grid;
-} */
+} 
 
 .flex {
   display: flex;
@@ -40,17 +40,14 @@
   display: flex;
   flex-direction: column;
 }
-
-.inline-flex {
-  display: inline-flex;
-}
-
+*/
 .container {
-  margin: 0 auto;
+  margin: 0 auto 50px ;
   inline-size: var(--container-size, min(100%, 700px));
 }
 
 .header {
+  display: flex;
   flex-direction: column;
   gap: 25px;
   margin-block-start: 100px;
@@ -66,6 +63,8 @@
 }
 
 .logo {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   cursor: default;
 }
@@ -83,20 +82,17 @@
 }
 
 .theme-menu__list {
-  flex-direction: column;
-  grid-column: 2/3;
-  align-items: flex-start;
+  display: grid;
+  justify-items: start;
+  justify-content: space-evenly;
   gap: .7142857em;
   margin-inline-start: 20px;
   font-size: 14px;
 }
 
-.button /*не работает*/ {
-  background-color: var(--bg-color, #000);
-  cursor: pointer;
-}
 
 .theme-menu__button {
+  
   position: relative;
   justify-self: start;
   border: none;
@@ -104,6 +100,7 @@
   font-size: 14px;
   line-height: normal;
   text-transform: inherit;
+  background: none;
 }
 
 .theme-menu__button:disabled::before {
@@ -150,6 +147,8 @@
 }
 
 .posts {
+  display: flex;
+  flex-direction: column;
   gap: 50px;
 }
 
@@ -162,23 +161,24 @@
   border-block-end: 2px solid currentColor;
   padding: 4px 10px 6px;
   font-variation-settings: 'wdth' var(--wdth, 100), 'wght' var(--bold-wgth, 785);
+  font-size: 18px;
 }
 
 /* не работает*/
 .linear-gradient_to-bottom::after {
   content: '';
   position: absolute;
-  background-image: var(--gredient-to-bottom);
+  background-image: var(--gradient-to-bottom);
   inset-block-start: 0;
   inset-inline-start: 0;
   inline-size: 100%;
   block-size: 100%;
 }
 
-/* Зачем?*/
-/*.filter-blur {
+
+.filter-blur {
   filter: blur(2px);
-} */
+} 
 
 .filter-sepia-blur {
   filter: sepia(90%) blur(2px);
@@ -224,10 +224,10 @@
   inline-size: 100%;
   aspect-ratio: 1 / 1;
 }
-/* зачем?*/
+/* зачем?
 .rotate90 {
   transform: rotate(90deg);
-}
+} */
 
 .card__img-label {
   position: absolute;
@@ -263,17 +263,22 @@
 } 
 
 .card__content {
+  display: flex;
   flex-direction: column;
   gap: 25px;
   padding: 25px 25px 25.5px;
-  line-height: 116.667%;
+  line-height: 21px;
   font-variation-settings: 'wdth' var(--wdth, 100), 'wght' var(--normal-wgth, 465);
 }
 
 .card__text-block {
+  display: flex;
+  flex-direction: column;
   flex-direction: column;
   gap: 27px;
 }
+
+
 
 .card__buttons {
   display: flex;
@@ -303,11 +308,13 @@
 }
 
 .card__save-button {
+  position: relative;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  margin: 0 auto 100px;
+  margin: 0 auto 80px;
   padding: 16px 17px 15px;
   font-size: 14px;
   inline-size: clamp(19.25rem, 18.6118rem + 2.723vw, 21.0625rem);
@@ -317,7 +324,7 @@
   position: relative;
   border: 2px solid currentColor;
   overflow: hidden;
-  transition: box-shadow var(--standart-animation, .3s ease);
+  transition: box-shadow var(--standart-animation);
 
   min-block-size: 38px;
 }
@@ -343,6 +350,11 @@
   box-shadow: 2px 2px 0px 0px currentColor;
 }
 
+.button {
+  background-color: var(--bg-color, #000);
+  cursor: pointer;
+}
+
 .button__element {
   position: relative;
   z-index: 1;
@@ -353,17 +365,19 @@
   color: var(--button-text-color, #00CC14);
   font-family: var(--accent-font, fantasy);
   font-weight: 400;
+  text-align: center;
   font-size: 14px;
-  font-style: normal;
+ 
   line-height: .9;
   mix-blend-mode: difference;
 }
 /* уменьшает сохр на память*/
 .button__icon {
-  color: var(--button-text-color, #00CC14);
+  color: var(--button-text-color);
   inline-size: 2em;
   block-size: 2em;
   mix-blend-mode: difference;
+  stroke: var(--button-text-color);
 }
 /*???*/
 dialog:-internal-dialog-in-top-layer {
@@ -371,6 +385,7 @@ dialog:-internal-dialog-in-top-layer {
 }
 
 .dialog {
+  display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: min-content auto;
   row-gap: 30px;
@@ -380,6 +395,12 @@ dialog:-internal-dialog-in-top-layer {
   color: var(--accent-color, #00CC14);
   background-color: var(--bg-color, #000);
   inline-size: clamp(21.5625rem, 20.9984rem + 1.1268vw, 22.3125rem);
+}
+
+.wrapper {
+display: grid;
+grid-template-columns: auto 1fr;
+grid-column-gap: 20px;
 }
 
 .dialog__form {
