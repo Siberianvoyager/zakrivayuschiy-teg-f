@@ -87,7 +87,6 @@
   text-transform: inherit;
   background: none;
   cursor: pointer;
-
 }
 
 .theme-menu__button:disabled::before {
