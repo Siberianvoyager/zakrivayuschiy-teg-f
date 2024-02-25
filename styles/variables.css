@@ -10,7 +10,6 @@
     --heart-contour-color: #00CC14;
     --heart-liked-color: red;
     --label-contour-color: #000;
-  
     --gradient-point: 0%;
     --gradient: repeating-linear-gradient(to left, var(--bg-gradient) 0 2px, transparent 2px 4px),
                 repeating-linear-gradient(to bottom, var(--bg-gradient) 0 2px, transparent 2px 4px),

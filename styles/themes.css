@@ -5,7 +5,7 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
-.page.theme-dark {
+:root.theme-dark {
     --bg-color: #000;
     --bg-gradient: #000;
     --bg-accent-gradient: #00CC14;
@@ -26,7 +26,7 @@
     --bold-wgth: 785;
   }
   
-  .page.theme-light {
+  :root.theme-light {
     --bg-color: #fff;
     --bg-gradient: #d3d3d3;
     --bg-accent-gradient-from: #e7e7e7;
@@ -36,7 +36,7 @@
     --heart-contour-color: #000;
     --label-contour-color: #fff;
   
-    --gradient-point: .01%;
+    --gradient-point: .0%;
     --gradient: repeating-linear-gradient(to left, var(--bg-gradient) 0 2px, transparent 2px 4px),
                 repeating-linear-gradient(to bottom, var(--bg-gradient) 0 2px, transparent 2px 4px),
                 linear-gradient(var(--bg-accent-gradient-from) var(--gradient-point), var(--bg-accent-gradient-to));

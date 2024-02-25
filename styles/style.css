@@ -23,6 +23,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  background-color: var(--bg-color);
   font-variation-settings: 'wdth' var(--wdth, 100), 'wght' var(--normal-wgth, 465);
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -87,6 +88,10 @@
   text-transform: inherit;
   background: none;
   cursor: pointer;
+}
+
+.theme-menu__button:focus {
+  outline: none;
 }
 
 .theme-menu__button:disabled::before {
@@ -266,6 +271,10 @@
   block-size: 38px;
 }
 
+.card__icon-button:focus {
+  outline: none;
+}
+
 .card__icon-button:focus-visible {
   border-color: var(--accent-color, #00CC14);
 }
@@ -294,6 +303,10 @@
   overflow: hidden;
   transition: box-shadow var(--standart-animation);
   min-block-size: 38px;
+}
+
+.animate-button:focus {
+  outline: none;
 }
 
 .animate-button::after {
