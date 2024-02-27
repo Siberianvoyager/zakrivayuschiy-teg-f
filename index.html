@@ -7,14 +7,14 @@
         <meta property="og:title" content="Закрывающий тег" />
         <meta property="og:url" content="/" />
         <meta property="og:description" content="Моя итоговая работа" />
-        <title>Закрывающийм тег</title>
+        <title>Закрывающий тег</title>
         <link rel="stylesheet" href="./fonts/fonts.css" />
         <link rel="stylesheet" href="./styles/variables.css" />
         <link rel="stylesheet" href="./styles/globals.css" />
         <link rel="stylesheet" href="./styles/style.css" />
         <link rel="stylesheet" href="./styles/animations.css" />
         <link rel="stylesheet" href="./styles/themes.css" />
-        <link rel="icon" href="./images/favicon.ico" sizes="any" />
+        <link rel="icon" href="./images/favicon.ico" sizes="any"/>
         <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
         <script src="./scripts/set-theme.js"></script>
@@ -454,30 +454,21 @@
                         </div>
                     </div>
                 </article>
+                <button class="button card__save-button animate-button" type="button"  onclick="window['dialog-id'].showModal();" aria-controls="dialog-id">
+                  <svg class="button__icon button__element xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
+                    <use href="./svg/save.svg#save-icon"></use>
+                  </svg>
+                  <span class="button__text button__element">
+                      Сохранить на память
+                  </span>
+              </button>
             </section>
-            <button class="button card__save-button animate-button" type="button"  onclick="window['dialog-id'].showModal();" aria-controls="dialog-id">
-                <svg class="button__icon button__element" viewBox="0 0 39 39">
-                    <use href="./svg/floppy.svg#floppy" />
-                </svg>
-                <span class="button__text button__element">
-                    Сохранить на память
-                </span>
-            </button>
         </main>
-
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="currentColor">
-            <symbol id="floppy"  >
-                <path
-                    fill="currentColor"
-                    d="M.5.5h3v3h-3zM.5 3.5h3v3h-3zM.5 6.5h3v3h-3zM.5 9.5h3v3h-3zM.5 12.5h3v3h-3zM.5 15.5h3v3h-3zM.5 18.5h3v3h-3zM.5 21.5h3v3h-3zM.5 24.5h3v3h-3zM.5 27.5h3v3h-3zM.5 30.5h3v3h-3zM.5 33.5h3v3h-3zM.5 36.5h3v3h-3zM33.5.5v3h-3v-3zM30.5.5v3h-3v-3zM27.5.5v3h-3v-3zM24.5.5v3h-3v-3zM21.5.5v3h-3v-3zM18.5.5v3h-3v-3zM15.5.5v3h-3v-3zM12.5.5v3h-3v-3zM9.5.5v3h-3v-3zM6.5.5v3h-3v-3zM36.5 3.5v3h-3v-3zM9.5 6.5v3h-3v-3zM9.5 3.5v3h-3v-3zM9.5 9.5v3h-3v-3zM30.5 6.5v3h-3v-3zM30.5 3.5v3h-3v-3zM30.5 9.5v3h-3v-3zM24.5 6.5v3h-3v-3zM24.5 3.5v3h-3v-3zM24.5 9.5v3h-3v-3zM30.5 12.5v3h-3v-3zM27.5 12.5v3h-3v-3zM24.5 12.5v3h-3v-3zM21.5 12.5v3h-3v-3zM18.5 12.5v3h-3v-3zM15.5 12.5v3h-3v-3zM12.5 12.5v3h-3v-3zM9.5 12.5v3h-3v-3zM33.5 21.5v3h-3v-3zM30.5 21.5v3h-3v-3zM27.5 21.5v3h-3v-3zM24.5 21.5v3h-3v-3zM21.5 21.5v3h-3v-3zM18.5 21.5v3h-3v-3zM15.5 21.5v3h-3v-3zM12.5 21.5v3h-3v-3zM9.5 21.5v3h-3v-3zM33.5 24.5v3h-3v-3zM9.5 24.5v3h-3v-3zM33.5 27.5v3h-3v-3zM9.5 27.5v3h-3v-3zM33.5 30.5v3h-3v-3zM9.5 30.5v3h-3v-3zM9.5 33.5v3h-3v-3zM33.5 33.5v3h-3v-3zM36.5 36.5v3h-3v-3zM33.5 36.5v3h-3v-3zM30.5 36.5v3h-3v-3zM27.5 36.5v3h-3v-3zM24.5 36.5v3h-3v-3zM21.5 36.5v3h-3v-3zM18.5 36.5v3h-3v-3zM15.5 36.5v3h-3v-3zM12.5 36.5v3h-3v-3zM9.5 36.5v3h-3v-3zM6.5 36.5v3h-3v-3zM39.5 39.5h-3v-3h3zM39.5 36.5h-3v-3h3zM39.5 33.5h-3v-3h3zM39.5 30.5h-3v-3h3zM39.5 27.5h-3v-3h3zM39.5 24.5h-3v-3h3zM39.5 21.5h-3v-3h3zM39.5 18.5h-3v-3h3zM39.5 15.5h-3v-3h3zM39.5 12.5h-3v-3h3zM39.5 9.5h-3v-3h3z"
-                    />
-            </symbol>
-        </svg>
 
         <dialog id="dialog-id" class="dialog">
             <div class="wrapper">
-                <svg class="dialog__icon" >
-                    <use href="./svg/floppy.svg#floppy"/>
+                <svg class="dialog__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" >
+                    <use href="./svg/save.svg#save-icon"/>
                 </svg>
                 <p class="dialog__text">
                     Вставьте дискету, чтобы продолжить
